@@ -1,6 +1,9 @@
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter("year", () => {
-    return new Date().getFullYear();
+  eleventyConfig.addFilter("date", (dateObj, format = "yyyy") => {
+    if(!dateObj) return "";
+    return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' }).toFormat(format);
   });
 
   return {
