@@ -1,9 +1,5 @@
-const { DateTime } = require("luxon");
-
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter("year", () => {
-    return DateTime.now().toFormat("yyyy");
-  });
+  eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
 
   return {
     dir: {
