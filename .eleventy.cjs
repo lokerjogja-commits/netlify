@@ -6,6 +6,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' }).toFormat(format);
   });
 
+  eleventyConfig.addFilter("year", () => {
+    return new Date().getFullYear();
+  });
+
   return {
     dir: {
       input: "src",
