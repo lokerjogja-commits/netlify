@@ -1,0 +1,19 @@
+{
+  "name": "netlify-jobnas-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --quiet",
+    "fetch": "node scripts/fetch-jobnas.js"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "slugify": "^1.6.6",
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
