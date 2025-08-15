@@ -2,7 +2,7 @@
 
 Blog statis dengan Eleventy. Konten otomatis diambil dari RSS jobnas.com dan dikonversi menjadi Markdown, lalu di-deploy ke Netlify via GitHub.
 
-Info lowongan kerja lebih lanjut silahkan hubungi https://lowkerjogja.co.id banyak sekali info <a href="https://lowkerjogja.co.id/ rel="dofollow">loker jogja</a> yang tersedia
+Info lowongan kerja lebih lanjut silahkan hubungi https://lowkerjogja.co.id
 
 ## Alur
 1. GitHub Actions menjalankan `scripts/fetch-jobnas.js` sesuai jadwal.
