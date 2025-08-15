@@ -39,7 +39,7 @@
   </main>
 
   <footer>
-    <p>© {{ "now" | date("yyyy") }} Blog Jobnas - Dibangun dengan Eleventy & Netlify</p>
+    <p>© {{ collections.all | first | date('yyyy') }} Blog Jobnas - Dibangun dengan Eleventy & Netlify</p>
   </footer>
 </body>
 </html>
