@@ -2,7 +2,7 @@
   "name": "netlify-jobnas-blog",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve --quiet",
